@@ -23,7 +23,6 @@ const Home = () => {
       <Guides />
       <Testimonial />
       <CallToAction />
-      <Footer />
     </LandingLayout>
   );
 };

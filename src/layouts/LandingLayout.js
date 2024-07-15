@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
-import { Footer, Hero } from '../sections';
+import { Footer, Navbar } from '../sections';
 
 const LandingLayout = ({ children }) => {
   const { setTheme } = useTheme();
@@ -11,7 +11,9 @@ const LandingLayout = ({ children }) => {
 
   return (
     <div>
+      <Navbar />
       <main className="relative flex flex-col text-gray-800">{children}</main>
+      <Footer />
     </div>
   );
 };
