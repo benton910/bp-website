@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
+import { Footer, Hero } from '../sections';
 
 const LandingLayout = ({ children }) => {
   const { setTheme } = useTheme();
@@ -9,7 +10,9 @@ const LandingLayout = ({ children }) => {
   }, [setTheme]);
 
   return (
-    <main className="relative flex flex-col text-gray-800">{children}</main>
+    <div>
+      <main className="relative flex flex-col text-gray-800">{children}</main>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 
-const Hero = () => {
+const AboutContent = () => {
   const { status: sessionStatus } = useSession();
   const [showMenu, setMenuVisibility] = useState(false);
 
@@ -68,4 +68,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AboutContent;
