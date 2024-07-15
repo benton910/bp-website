@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <div className="w-full py-10">
-      <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-3/4">
+      <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-5/6">
         <header className="flex items-center justify-between space-x-3">
           <Link href="/" className="text-2xl font-bold">
             Benton Parker

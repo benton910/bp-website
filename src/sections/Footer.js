@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <div className="w-full">
-      <div className="relative flex flex-col md:mx-auto md:w-3/4">
+      <div className="relative flex flex-col md:mx-auto md:w-5/6">
         <footer className="flex flex-col items-center justify-center py-5 space-x-0 space-y-3 border-b md:flex-row md:space-y-0 md:space-x-3">
           <a className="px-5 py-2 text-xl rounded hover:underline">About</a>
           <a className="px-5 py-2 text-xl rounded hover:underline">Showcase</a>
