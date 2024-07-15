@@ -3,7 +3,6 @@ import { LandingLayout } from '@/layouts/index';
 import {
   CallToAction,
   Features,
-  Footer,
   Guides,
   Hero,
   Pricing,
