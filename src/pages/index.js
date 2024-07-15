@@ -14,8 +14,8 @@ const Home = () => {
   return (
     <LandingLayout>
       <Meta
-        title="NextJS SaaS Boilerplate"
-        description="A boilerplate for your NextJS SaaS projects."
+        title="BCP Music"
+        description="Benton Parker's Music Page"
       />
       <Hero />
       <Features />

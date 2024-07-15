@@ -11,12 +11,11 @@ const About = () => {
   return (
     <LandingLayout>
       <Meta
-        title="NextJS SaaS Boilerplate"
-        description="A boilerplate for your NextJS SaaS projects."
+        title="BCP Music | About"
+        description="Read more about Benton Parker!"
       />
       <AboutContent />
       <Features />
-      <Footer />
     </LandingLayout>
   );
 };
