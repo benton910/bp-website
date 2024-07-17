@@ -2,6 +2,8 @@ import { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
+import Image from 'next/image';
+import logoNameImg from '../../public/images/PROMOcopy/HANKFISH/cutout_text_no_bgnd.png';
 
 const Navbar = () => {
   const { status: sessionStatus } = useSession();
@@ -11,10 +13,17 @@ const Navbar = () => {
 
   return (
     <div className="w-full py-10">
-      <div className="relative flex flex-col-reverse px-10 mx-auto space-y-5 md:w-100">
-        <header className="flex items-center justify-between space-x-3">
+      <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-100">
+        <header className="flex items-start justify-between space-x-3">
           <Link href="/" className="text-2xl font-bold">
-            Benton Parker
+            <Image
+              src={logoNameImg}
+              alt="Picture of the main text logo"
+              width={300}
+              height={100}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+            />
           </Link>
           <button className="md:hidden" onClick={toggleMenu}>
             {!showMenu ? (

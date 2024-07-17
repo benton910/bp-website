@@ -1,7 +1,7 @@
 import { useState } from 'react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useSession } from 'next-auth/react';
-import Link from 'next/link';
+import Image from 'next/image';
+import catfishImg from '../../public/images/PROMOcopy/HANKFISH/cutoutfish1_HIGHRES.png';
 
 const AboutContent = () => {
   const { status: sessionStatus } = useSession();
@@ -12,7 +12,16 @@ const AboutContent = () => {
   return (
     <div className="w-full py-10">
       <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-5/6">
-        <div className="flex flex-col items-center justify-center pt-10 mx-auto md:w-3/5">
+        <div class="h-full absolute top-0 left-0 z-0">
+          <Image
+            src={catfishImg}
+            alt="Picture of the main text logo"
+            class="opacity-40 z-0"
+          // blurDataURL="data:..." automatically provided
+          // placeholder="blur" // Optional blur-up while loading
+          />
+        </div>
+        <div className="flex flex-col items-center justify-center pt-10 mx-auto md:w-3/5 z-10">
           <h1 className="text-5xl font-extrabold text-center">
             <span className="block text-blue-600">Blues and Soul</span>
             <span className="block">from Memphis, TN</span>
@@ -21,7 +30,7 @@ const AboutContent = () => {
             Singer, Songwriter, Guitar, and Bass
           </p>
         </div>
-        <div className="flex items-center justify-center space-x-5">
+        <div className="flex items-center justify-center space-x-5 z-10">
           <a className="px-10 py-3 text-center text-white bg-blue-600 rounded shadow hover:bg-blue-500">
             Watch Now!
           </a>
