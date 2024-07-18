@@ -12,11 +12,10 @@ const Hero = () => {
   return (
     <div className="w-full py-10">
       <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-5/6">
-        <div class="h-full absolute top-0 left-0 z-0">
+        <div className="h-full absolute top-0 left-0 z-0 opacity-40">
           <Image
             src={catfishImg}
             alt="Picture of the main text logo"
-            class="opacity-40 z-0"
           // blurDataURL="data:..." automatically provided
           // placeholder="blur" // Optional blur-up while loading
           />

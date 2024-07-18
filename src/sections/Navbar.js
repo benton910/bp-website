@@ -19,7 +19,7 @@ const Navbar = () => {
             <Image
               src={logoNameImg}
               alt="Picture of the main text logo"
-              width={300}
+              width={200}
               height={100}
             // blurDataURL="data:..." automatically provided
             // placeholder="blur" // Optional blur-up while loading

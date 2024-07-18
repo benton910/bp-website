@@ -1,6 +1,13 @@
 import { useEffect } from 'react';
 import { useTheme } from 'next-themes';
 import { Footer, Navbar } from '../sections';
+import { Inter } from 'next/font/google'
+
+// If loading a variable font, you don't need to specify the font weight
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 const LandingLayout = ({ children }) => {
   const { setTheme } = useTheme();
@@ -10,7 +17,7 @@ const LandingLayout = ({ children }) => {
   }, [setTheme]);
 
   return (
-    <div>
+    <div className={inter.className}>
       <Navbar />
       <main className="relative flex flex-col text-gray-800">{children}</main>
       <Footer />
