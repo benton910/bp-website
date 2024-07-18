@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import instaImg from '../../public/images/PROMOcopy/SOCIAL/IMG_3642_LE_auto_x2.png';
+import fbImage from '../../public/images/PROMOcopy/SOCIAL/IMG_5378_LE_auto_x2.png';
 
 const Footer = () => {
   return (
@@ -17,7 +17,16 @@ const Footer = () => {
             // placeholder="blur" // Optional blur-up while loading
             />
           </a>
-          <a className="px-5 py-2 text-xl rounded hover:underline">Facebook</a>
+          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
+            <Image
+              src={fbImage}
+              alt="Picture of the main text logo"
+              width={92}
+              height={92}
+            // blurDataURL="data:..." automatically provided
+            // placeholder="blur" // Optional blur-up while loading
+            />
+          </a>
           <a className="px-5 py-2 text-xl rounded hover:underline">Youtube</a>
           <a className="px-5 py-2 text-xl rounded hover:underline">Venmo</a>
           <a className="px-5 py-2 text-xl rounded hover:underline">CashApp</a>
