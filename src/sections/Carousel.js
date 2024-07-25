@@ -29,7 +29,7 @@ export default function Carousel({ images }) {
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
-      <div className="w-1/3 h-[78vh] flex overflow-hidden relative m-auto">
+      <div className="w-1/3 h-[80vh] flex overflow-hidden relative m-auto mt-5 mb-5">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -54,7 +54,7 @@ export default function Carousel({ images }) {
         className="absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
 
-      <div id="thisdiv" className="relative flex justify-center p-2">
+      <div className="relative flex justify-center p-2">
         {images.map((_, index) => {
           return (
             <div
