@@ -13,7 +13,7 @@ const LandingLayout = ({ children }) => {
   const { setTheme } = useTheme();
 
   useEffect(() => {
-    setTheme('light');
+    setTheme('dark');
   }, [setTheme]);
 
   return (
