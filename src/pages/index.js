@@ -10,6 +10,7 @@ import {
   Testimonial,
 } from '@/sections/index';
 import Image from 'next/image';
+
 import soloShot1 from '../../public/images/PROMOcopy/HIGHRESSOLO.jpg';
 import soloShot2 from '../../public/images/PROMOcopy/HIGHRESSOLO2.jpg'
 import highResPoster from '../../public/images/PROMOcopy/HANKFISH/Poster18x28_HIGHRES.jpg'
