@@ -24,12 +24,12 @@ export default function Carousel({ images }) {
   };
 
   return (
-    <div className="relative bg-black">
+    <div className="relative bg-black/0 w-5/6 self-center">
       <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
-      <div className="w-1/3 h-full flex overflow-hidden relative m-auto mt-5 mb-5">
+      <div className="w-2/5 h-full flex overflow-hidden relative m-auto mt-5 mb-5">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
