@@ -29,7 +29,7 @@ export default function Carousel({ images }) {
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
-      <div className="w-1/3 h-[80vh] flex overflow-hidden relative m-auto mt-5 mb-5">
+      <div className="w-1/3 h-full flex overflow-hidden relative m-auto mt-5 mb-5">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -41,8 +41,6 @@ export default function Carousel({ images }) {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  layout="fill"
-                  className="fill-inherit"
                 />
               );
             }
