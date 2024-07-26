@@ -30,11 +30,11 @@ const Home = () => {
       />
       <Carousel images={images} />
       <Hero />
-      <Features />
+      {/* <Features />
       <Pricing />
       <Guides />
       <Testimonial />
-      <CallToAction />
+      <CallToAction /> */}
     </LandingLayout>
   );
 };

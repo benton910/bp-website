@@ -16,8 +16,6 @@ const Footer = () => {
               alt="Instagram icon"
               width={50}
               height={50}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
             />
           </a>
           <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
@@ -26,8 +24,6 @@ const Footer = () => {
               alt="Facebook icon"
               width={92}
               height={92}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
             />
           </a>
           <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
@@ -36,8 +32,6 @@ const Footer = () => {
               alt="Youtube icon"
               width={50}
               height={50}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
             />
           </a>
           <a href="https://account.venmo.com/u/bentonparkermusic" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
@@ -46,8 +40,6 @@ const Footer = () => {
               alt="Venmo icon"
               width={50}
               height={50}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
             />
           </a>
           <a href="https://cash.app/$bentonparkermusic" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
@@ -56,8 +48,6 @@ const Footer = () => {
               alt="CashApp icon"
               width={50}
               height={50}
-            // blurDataURL="data:..." automatically provided
-            // placeholder="blur" // Optional blur-up while loading
             />
           </a>
         </footer>
