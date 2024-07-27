@@ -18,7 +18,7 @@ const Footer = () => {
               height={50}
             />
           </a>
-          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
+          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="pl-3 pr-5 py-2 text-xl rounded hover:underline">
             <Image
               src={fbIcon}
               alt="Facebook icon"
@@ -26,7 +26,7 @@ const Footer = () => {
               height={92}
             />
           </a>
-          <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
+          <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="pr-7 pl-2 py-2 text-xl rounded hover:underline">
             <Image
               src={youtubeIcon}
               alt="Youtube icon"
