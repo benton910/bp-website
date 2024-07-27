@@ -61,3 +61,7 @@ Read the [docs](https://docs.nextacular.co) for more details
 - Stripe - 10.13.0
 - SWR - 1.3.0
 - Validator - 13.7.0
+
+## Carousel
+
+This is the carousel that I'm currently using on the landing page: https://gist.github.com/Dromediansk/aaf9b6598524b3892e5d2ffed0f7f03c
