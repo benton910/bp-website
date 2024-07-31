@@ -2,7 +2,8 @@ import Meta from '@/components/Meta/index';
 import { LandingLayout } from '@/layouts/index';
 import {
   Features,
-  AboutContent
+  AboutContent,
+  MediaContent
 } from '@/sections/index';
 import Image from 'next/image';
 
@@ -25,7 +26,7 @@ const About = () => {
           title="BCP Music | Media"
           description="Hear Benton Parker!"
         />
-        <AboutContent />
+        <MediaContent />
         <Features />
       </LandingLayout>
     </>
