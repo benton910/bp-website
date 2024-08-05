@@ -27,7 +27,7 @@ const AboutContent = () => {
             <div className="relative flex items-center justify-center ml-5 mr-2 my-auto w-full h-full z-10">
               <Image
                 src={soloShot1}
-                alt='Picture of catfish'
+                alt='Picture of Benton'
                 className='object-cover'
               />
             </div>
@@ -58,7 +58,7 @@ const AboutContent = () => {
             <div className="relative flex items-center justify-center mr-5 ml-2 my-auto w-full h-full z-10">
               <Image
                 src={soloShot2}
-                alt='Picture of catfish'
+                alt='Picture of Benton'
                 className='object-cover'
               />
             </div>
@@ -70,7 +70,7 @@ const AboutContent = () => {
             <div className="relative flex items-center justify-center ml-5 mr-2 my-auto w-full h-full z-10">
               <Image
                 src={soloShot1}
-                alt='Picture of catfish'
+                alt='Picture of Benton'
                 className='object-cover'
               />
             </div>

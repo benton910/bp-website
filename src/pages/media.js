@@ -17,8 +17,6 @@ const About = () => {
           src={catfishImg}
           alt="Picture of catfish"
           className='object-cover'
-        // blurDataURL="data:..." automatically provided
-        // placeholder="blur" // Optional blur-up while loading
         />
       </div>
       <LandingLayout>
