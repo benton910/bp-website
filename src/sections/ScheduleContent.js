@@ -16,7 +16,7 @@ const ScheduleContent = () => {
       <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-full">
         <div className="flex flex-col items-center justify-center pt-10 mx-auto z-10">
           <h1 className="text-5xl font-extrabold text-center">
-            <span className="block text-blue-600">SCHEDULE</span>
+            <span className="block uppercase tracking-widest font-bold text-blue-600">SCHEDULE</span>
           </h1>
         </div>
         <div className="flex items-center justify-center w-full z-10">
