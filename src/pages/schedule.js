@@ -24,7 +24,6 @@ const Schedule = () => {
           description="Hear Benton Parker!"
         />
         <ScheduleContent />
-        <Features />
       </LandingLayout>
     </>
   );
