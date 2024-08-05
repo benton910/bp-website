@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useSession } from 'next-auth/react';
 
-const MediaContent = () => {
+const ScheduleContent = () => {
   const { status: sessionStatus } = useSession();
   const [showMenu, setMenuVisibility] = useState(false);
 
@@ -29,4 +29,4 @@ const MediaContent = () => {
   );
 };
 
-export default MediaContent;
+export default ScheduleContent;

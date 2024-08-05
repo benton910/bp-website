@@ -40,7 +40,7 @@ const Navbar = () => {
           >
             <nav className="flex flex-col w-full space-x-0 space-y-3 text-center md:space-y-0 md:space-x-3 md:flex-row">
               <a href="/about" className="px-5 py-2 rounded hover:text-blue-600/80">About</a>
-              <a className="px-5 py-2 rounded hover:text-blue-600/80">Schedule</a>
+              <a href="/schedule" className="px-5 py-2 rounded hover:text-blue-600/80">Schedule</a>
               <a href="/media" className="px-5 py-2 rounded hover:text-blue-600/80">Media</a>
               <a className="px-5 py-2 rounded hover:text-blue-600/80">Socials</a>
               {/* <a className="px-5 py-2 rounded hover:text-blue-600/80">Store</a> */}
