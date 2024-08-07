@@ -5,10 +5,19 @@ import {
   ScheduleContent
 } from '@/sections/index';
 import Image from 'next/image';
-
 import catfishImg from '../../public/images/PROMOcopy/HANKFISH/cutoutfish1_HIGHRES.png';
+import { getAllShows } from '@/prisma/services/show';
+import prisma from '@/prisma/index';
 
-const Schedule = () => {
+export async function getServerSideProps() {
+  // Fetch data from external API
+  const allShows = await prisma.show.findMany();
+  const showsProp = allShows.map((x) => JSON.stringify(x));
+  // Pass data to the page via props
+  return { props: { showsProp } }
+};
+
+const Schedule = ({ showsProp }) => {
   return (
     <>
       <div className="h-5/6 w-5/6 top-10 left-12 absolute z-0 opacity-20 align-center">
@@ -23,7 +32,7 @@ const Schedule = () => {
           title="BCP Music | Media"
           description="Hear Benton Parker!"
         />
-        <ScheduleContent />
+        <ScheduleContent allShows={showsProp} />
       </LandingLayout>
     </>
   );
