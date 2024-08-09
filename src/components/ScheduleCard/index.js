@@ -27,7 +27,15 @@
 //      and the gig title should say something like 'BP & The Royal Reds @ <gigVenue>' (Applies for 3 piece & up)
 
 
-const formatDateTimeRange = () => { };
+const formatDate = (date) => {
+  console.log(new Intl.DateTimeFormat('en-US').format(date));
+  return new Intl.DateTimeFormat('en-US').format(date);
+};
+
+const formatDateTimeRange = (dateTime1, dateTime2) => {
+  console.log(dateTime1.toLocaleTimeString('en-US', { timeStyle: 'short' }) + ' - ' + dateTime2.toLocaleTimeString('en-US', { timeStyle: 'short' }));
+  return dateTime1.toLocaleTimeString('en-US', { timeStyle: 'short' }) + ' - ' + dateTime2.toLocaleTimeString('en-US', { timeStyle: 'short' });
+};
 
 const ScheduleCard = (scheduleCardProps) => {
   return (
@@ -35,7 +43,8 @@ const ScheduleCard = (scheduleCardProps) => {
       <div className="md:flex">
         <div className="p-8">
           <div className="uppercase tracking-wide text-3xl text-blue-600 font-semibold">@ {scheduleCardProps.gigVenue}</div>
-          <p className="block mt-1 text-md leading-tight font-medium text-black">{scheduleCardProps.startTime} - {scheduleCardProps.endTime}</p>
+          <p className="block mt-4 text-lg leading-tight font-medium text-black">{formatDate(new Date(scheduleCardProps.startTime))}</p>
+          <p className="block mt-1 text-md leading-tight font-medium text-black">{formatDateTimeRange(new Date(scheduleCardProps.startTime), new Date(scheduleCardProps.endTime))}</p>
           <p className="block mt-1 text-md leading-tight font-medium text-black">{scheduleCardProps.cityState}</p>
           {scheduleCardProps.personnel ? <p className="mt-2 text-gray-500">ft. {scheduleCardProps.personnel}</p> : null}
           {scheduleCardProps.venueUrl ? <a href={scheduleCardProps.venueUrl} target="_blank" className="mt-3 text-blue-500">More info</a> : null}
