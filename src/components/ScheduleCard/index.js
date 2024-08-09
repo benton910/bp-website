@@ -9,12 +9,7 @@
 // venueUrl           String
 
 
-//STYLING:
-//  - on hover, make the card get bigger/hover up (animation)
-
-
 //Need some helper functions to do a few things:
-// 1) Helper function to format date/time for the gig date & time
 // 2) Helper function to determine How to display based on bpRole
 //    - if bpRole == SOLO , then the personnel should contain the name of the person that bp is playing with,
 //      and the gig title should say something like 'w/ <personnel> @ <gigVenue>'

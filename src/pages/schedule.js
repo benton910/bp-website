@@ -29,8 +29,8 @@ const Schedule = ({ showsProp }) => {
       </div>
       <LandingLayout>
         <Meta
-          title="BCP Music | Media"
-          description="Hear Benton Parker!"
+          title="BCP Music | Schedule"
+          description="See Benton Parker's Schedule!"
         />
         <ScheduleContent allShows={showsProp} />
       </LandingLayout>
