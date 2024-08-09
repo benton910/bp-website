@@ -9,6 +9,8 @@ import catfishImg from '../../public/images/PROMOcopy/HANKFISH/cutoutfish1_HIGHR
 import { getAllShows } from '@/prisma/services/show';
 import prisma from '@/prisma/index';
 
+
+//ORGANIZE ALL SHOWS BY DATE
 export async function getServerSideProps() {
   // Fetch data from external API
   const allShows = await prisma.show.findMany();
