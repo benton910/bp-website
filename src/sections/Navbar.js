@@ -24,7 +24,7 @@ const Navbar = () => {
           </Link>
         </div>
         <header className="flex items-start justify-between space-x-3">
-          <button className="md:hidden absolute right-5 top-0" onClick={toggleMenu}>
+          <button className="md:hidden absolute right-6 top-0" onClick={toggleMenu}>
             {!showMenu ? (
               <Bars3Icon className="w-8 h-8" />
             ) : (

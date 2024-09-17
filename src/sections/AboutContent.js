@@ -33,10 +33,10 @@ const AboutContent = () => {
             </div>
             <div className="flex flex-col p-5 items-center justify-center mx-auto z-10">
               <p className="pt-3 pb-3 pl-5 pr-5 text-center text-gray-800">
-                Benton Parker, a rising star in the Blues/Soul scene, hails from the vibrant musical landscapes of Memphis, TN. At just 28 years old, Benton has carved out a significant space in the music world, earning acclaim for his raw, soulful vocals and dynamic performances. Born on November 20, 1995, in Jackson, MS, Benton spent his formative years immersed in the rich musical heritage of the South.
+                Benton Parker, a rising star in the Blues/Soul scene, hails from the vibrant musical landscapes of Memphis, TN. At just 28 years old, Benton has carved out a significant space in the music world, earning acclaim for his raw, soulful vocals and dynamic performances.
               </p>
               <p className="pt-3 pb-3 pl-5 pr-5 text-center text-gray-800">
-                From an early age, Benton was drawn to music. Singing in multiple choirs and bands throughout his youth, he found inspiration in the legendary Elvis Presley after a life-changing visit to Graceland at the age of five. This early fascination with Elvis sparked a deep love for the performing arts and set the stage for Benton’s future in music.
+                Born and raised in Jackson, MS, Benton spent his formative years immersed in the rich musical heritage of the South. From an early age, Benton was drawn to music. He found inspiration in the legendary Elvis Presley after a life-changing visit to Graceland at the age of five. This early fascination with Elvis sparked a deep love for the performing arts and set the stage for Benton’s future in music.
               </p>
               <p className="pt-3 pb-3 pl-5 pr-5 text-center text-gray-800">
                 In 2014, Benton moved to Memphis to attend college. It was here that he picked up the guitar and continued to refine his vocal talents, performing in various bands and choirs. After college, Benton decided to fully embrace his passion, becoming a full-time professional musician in 2021. His journey as a musician is marked by his roles as a singer/songwriter, guitarist, and bass player.
