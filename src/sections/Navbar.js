@@ -13,17 +13,18 @@ const Navbar = () => {
 
   return (
     <div className="w-full py-10">
-      <Link href="/" className="absolute top-0 left-0 z-30 m-4">
-        <Image
-          src={logoNameImg}
-          alt="Picture of the main text logo"
-          width={250}
-          height={100}
-        />
-      </Link>
-      <div className="relative flex flex-col items-end px-10 mx-auto space-y-5 md:w-100">
+      <div className="relative flex flex-col items-center px-10 mx-auto space-y-5 md:w-100">
+        <div className="h-1/3 w-1/3">
+          <Link href="/" className="z-30 m-10">
+            <Image
+              src={logoNameImg}
+              alt="Picture of the main text logo"
+              className="object-contain"
+            />
+          </Link>
+        </div>
         <header className="flex items-start justify-between space-x-3">
-          <button className="md:hidden" onClick={toggleMenu}>
+          <button className="md:hidden absolute right-5 top-0" onClick={toggleMenu}>
             {!showMenu ? (
               <Bars3Icon className="w-8 h-8" />
             ) : (
@@ -34,16 +35,15 @@ const Navbar = () => {
             className={[
               'items-center justify-center md:flex-row md:flex md:relative md:bg-transparent md:shadow-none md:top-0 md:backdrop-blur-none md:space-x-3',
               showMenu
-                ? 'absolute z-50 flex flex-col py-5 space-x-0 rounded shadow-xl md:py-0 left-8 right-8 bg-white top-24 space-y-3 md:space-y-0 px-5'
+                ? 'absolute z-50 flex flex-col py-5 space-x-0 rounded shadow-xl bg-black/60 md:py-0 left-8 right-8 top-24 space-y-3 md:space-y-0 px-5'
                 : 'hidden',
             ].join(' ')}
           >
-            <nav className="flex flex-col w-full space-x-0 space-y-3 text-center md:space-y-0 md:space-x-3 md:flex-row">
+            <nav className="flex flex-col w-full space-x-0 space-y-3 text-center text-xl md:space-y-0 md:space-x-3 md:flex-row">
               <a href="/about" className="px-5 py-2 rounded hover:text-blue-600/80">About</a>
               <a href="/schedule" className="px-5 py-2 rounded hover:text-blue-600/80">Schedule</a>
               <a href="/media" className="px-5 py-2 rounded hover:text-blue-600/80">Media</a>
-              <a className="px-5 py-2 rounded hover:text-blue-600/80">Socials</a>
-              {/* <a className="px-5 py-2 rounded hover:text-blue-600/80">Store</a> */}
+              <a className="px-5 py-2 rounded hover:text-blue-600/80">Store</a>
               <a className="px-5 py-2 rounded hover:text-blue-600/80">Contact</a>
             </nav>
             {/* <Link
