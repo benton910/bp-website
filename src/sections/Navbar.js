@@ -13,16 +13,16 @@ const Navbar = () => {
 
   return (
     <div className="w-full py-10">
-      <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-100">
+      <Link href="/" className="absolute top-0 left-0 z-30 m-4">
+        <Image
+          src={logoNameImg}
+          alt="Picture of the main text logo"
+          width={250}
+          height={100}
+        />
+      </Link>
+      <div className="relative flex flex-col items-end px-10 mx-auto space-y-5 md:w-100">
         <header className="flex items-start justify-between space-x-3">
-          <Link href="/" className="text-2xl font-bold">
-            <Image
-              src={logoNameImg}
-              alt="Picture of the main text logo"
-              width={200}
-              height={100}
-            />
-          </Link>
           <button className="md:hidden" onClick={toggleMenu}>
             {!showMenu ? (
               <Bars3Icon className="w-8 h-8" />
