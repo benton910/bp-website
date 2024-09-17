@@ -1,5 +1,7 @@
 # BP Website
 
+Hex color for logo is #164480
+
 This website was built using the Nextacular starter project - please see below for more details on that:
 
 # Nextacular🌙
