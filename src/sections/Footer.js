@@ -10,7 +10,7 @@ const Footer = () => {
     <div className="w-full">
       <div className="relative flex flex-col md:mx-auto md:w-5/6">
         <footer className="flex flex-col items-center justify-center py-5 space-x-0 space-y-3 border-b md:flex-row md:space-y-0 md:space-x-3">
-          <a href="https://www.instagram.com/bentonparkermusic" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
+          <a href="https://www.instagram.com/bentonparkermusic" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-200">
             <Image
               src={instaIcon}
               alt="Instagram icon"
@@ -18,7 +18,7 @@ const Footer = () => {
               height={50}
             />
           </a>
-          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="pl-3 pr-5 py-2 text-xl rounded hover:underline">
+          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="pl-3 pr-5 py-2 rounded hover:scale-125 duration-200">
             <Image
               src={fbIcon}
               alt="Facebook icon"
@@ -26,7 +26,7 @@ const Footer = () => {
               height={92}
             />
           </a>
-          <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="pr-7 pl-2 py-2 text-xl rounded hover:underline">
+          <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="pr-7 pl-2 py-2 rounded hover:scale-125 duration-200">
             <Image
               src={youtubeIcon}
               alt="Youtube icon"
@@ -34,7 +34,7 @@ const Footer = () => {
               height={50}
             />
           </a>
-          <a href="https://account.venmo.com/u/bentonparkermusic" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
+          <a href="/" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-200">
             <Image
               src={venmoIcon}
               alt="Venmo icon"
@@ -42,7 +42,7 @@ const Footer = () => {
               height={50}
             />
           </a>
-          <a href="https://cash.app/$bentonparkermusic" target="_blank" className="px-5 py-2 text-xl rounded hover:underline">
+          <a href="/" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-200">
             <Image
               src={cashappIcon}
               alt="CashApp icon"
