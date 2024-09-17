@@ -5,6 +5,9 @@ import ScheduleCard from '@/components/ScheduleCard';
 //Retrieve ALL schedule entries from the DB, return in an Array
 //For each entry in the array, display a ScheduleCard component
 
+// Define a helper function to order the allShows[] array by the starting date/time of the gig
+
+
 const ScheduleContent = ({ allShows }) => {
   const { status: sessionStatus } = useSession();
   const [showMenu, setMenuVisibility] = useState(false);

@@ -52,7 +52,7 @@ const Footer = () => {
           </a>
         </footer>
         <p className="py-5 text-center text-gray-400">
-          &copy; Nextacular. All rights reserved {new Date().getFullYear()}.
+          &copy;Benton Parker Music. All rights reserved {new Date().getFullYear()}
         </p>
       </div>
     </div>

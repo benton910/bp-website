@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import { useSession } from 'next-auth/react';
-import Image from 'next/image';
-import catfishImg from '../../public/images/PROMOcopy/HANKFISH/cutoutfish1_HIGHRES.png';
 
 const Hero = () => {
   const { status: sessionStatus } = useSession();
@@ -23,7 +21,7 @@ const Hero = () => {
         </div> */}
         <div className="flex flex-col items-center justify-center pt-10 mx-auto md:w-3/5 z-10">
           <h1 className="text-5xl font-extrabold text-center">
-            <span className="block text-blue-600/90">Blues and Soul</span>
+            <span className="block text-blue-600/90">Americana Soul</span>
             <span className="block text-blue-50">from Memphis, TN</span>
           </h1>
           <p className="mt-5 text-center text-gray-100">
