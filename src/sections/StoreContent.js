@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { useSession } from 'next-auth/react';
+import MerchCard from '@/components/MerchCard';
+
+
+//Need to integrate with Stripe to get the product details?
 
 const StoreContent = () => {
   const { status: sessionStatus } = useSession();
-  const [showMenu, setMenuVisibility] = useState(false);
+  const [showMerchMenu, setMerchMenuVisibility] = useState(false);
 
-  const toggleMenu = () => setMenuVisibility(!showMenu);
+  const toggleMerchMenu = () => setMerchMenuVisibility(!showMerchMenu);
 
   return (
     <div className="w-full py-10">
@@ -14,6 +18,13 @@ const StoreContent = () => {
           <h1 className="text-6xl font-extrabold text-center">
             <span className="block uppercase tracking-widest font-bold text-blue-600">MERCHANDISE</span>
           </h1>
+        </div>
+        <div className="flex flex-col items-center justify-center mx-auto z-10">
+          <MerchCard
+            title="'Steppin' Out' CD"
+            price="$20.00"
+            description="Benton Parker's debut album, 'Steppin' Out', on CD"
+          />
         </div>
       </div>
     </div>
