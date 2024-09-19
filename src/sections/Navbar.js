@@ -44,7 +44,7 @@ const Navbar = () => {
               <a href="/schedule" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Schedule</a>
               <a href="/media" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Media</a>
               <a href="/store" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Store</a>
-              <a href="/payment" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Contact</a>
+              <a href="/contact" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Contact</a>
             </nav>
             {/* <Link
                   href={

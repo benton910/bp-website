@@ -1,5 +1,6 @@
 import AboutContent from './AboutContent';
 import Carousel from './Carousel';
+import ContactContent from './ContactContent'
 import Features from './Features';
 import Footer from './Footer';
 import Guides from './Guides';
@@ -11,4 +12,4 @@ import ScheduleContent from './ScheduleContent'
 import StoreContent from './StoreContent';
 import Testimonial from './Testimonial';
 
-export { AboutContent, Carousel, Features, Footer, Guides, Hero, MediaContent, Navbar, Pricing, ScheduleContent, StoreContent, Testimonial };
+export { AboutContent, ContactContent, Carousel, Features, Footer, Guides, Hero, MediaContent, Navbar, Pricing, ScheduleContent, StoreContent, Testimonial };

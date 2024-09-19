@@ -4,7 +4,7 @@ import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 /**
- * Carousel component for nextJS and Tailwind.
+ * Carousel component using nextJS and Tailwind.
  * Using external library react-easy-swipe for swipe gestures on mobile devices (optional)
  *
  * @param images - Array of images with src and alt attributes
@@ -26,6 +26,7 @@ export default function Carousel({ images }) {
   };
 
   const handlePrevSlide = () => {
+    setIsReady(false);
     let newSlide = currentSlide === 0 ? images.length - 1 : currentSlide - 1;
     setCurrentSlide(newSlide);
   };
@@ -47,6 +48,7 @@ export default function Carousel({ images }) {
     <div className="relative bg-black/0 w-full self-center">
       <div className="w-4/5 h-full md:w-2/5 flex overflow-hidden relative m-auto mt-5 mb-5">
         <AiOutlineLeft
+          onClick={handlePrevSlide}
           className="invisible md:visible absolute h-full left-0 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400/50 z-20"
         />
         <Swipe
@@ -60,8 +62,10 @@ export default function Carousel({ images }) {
                 <Image
                   src={image.src}
                   alt={image.alt}
-                  className={`object-cover bg-gray-400 transition duration-1000 ${isReady ? 'scale-100 bg-gray-400 blur-0' : 'scale-120 blur-xl'
-                    }`}
+                  className={`
+                    object-cover bg-gray-400 transition duration-700
+                    ${isReady ? 'scale-100 bg-gray-400 blur-0' : 'scale-120 blur-xl'}
+                    `}
                   onLoadingComplete={onLoadCallback}
                 />
               );
@@ -70,7 +74,7 @@ export default function Carousel({ images }) {
         </Swipe>
         <AiOutlineRight
           onClick={handleNextSlide}
-          className="invisible md:visible absolute right-0 md:right-5 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
+          className="invisible md:visible absolute h-full right-0 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400/50 z-20"
         />
       </div>
     </div>
