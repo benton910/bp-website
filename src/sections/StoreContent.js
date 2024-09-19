@@ -14,8 +14,8 @@ const StoreContent = () => {
   return (
     <div className="w-full py-10">
       <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-5/6">
-        <div className="flex flex-col items-center justify-center pt-10 mx-auto z-10">
-          <h1 className="text-6xl font-extrabold text-center">
+        <div className="flex flex-col items-center justify-center md:pt-10 mx-auto z-10">
+          <h1 className="text-4xl md:text-6xl font-extrabold text-center">
             <span className="block uppercase tracking-widest font-bold text-blue-600">MERCHANDISE</span>
           </h1>
         </div>

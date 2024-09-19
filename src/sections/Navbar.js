@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className="w-full pt-5 md:py-10">
       <div className="relative flex flex-col items-center px-10 mx-auto space-y-5 md:w-100">
-        <div className="h-1/2 w-1/2 md:h-1/3 md:w-1/3">
+        <div className="h-3/4 w-3/4 md:h-1/3 md:w-1/3">
           <Link href="/" className="z-30 m-10">
             <Image
               src={logoNameImg}

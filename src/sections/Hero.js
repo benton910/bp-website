@@ -15,7 +15,7 @@ const Hero = () => {
             <span className="block text-5xl text-blue-600/90">Americana Soul</span>
             <span className="block text-3xl md:text-5xl text-blue-50">from Memphis, TN</span>
           </h1>
-          <p className="mt-5 text-center text-gray-100">
+          <p className="mt-7 text-center text-gray-100 text-sm">
             Singer, Songwriter, Guitar, and Bass
           </p>
         </div>
