@@ -22,13 +22,6 @@ export async function getServerSideProps() {
 const Schedule = ({ showsProp }) => {
   return (
     <>
-      <div className="h-5/6 w-5/6 top-10 left-12 absolute z-0 opacity-20 align-center">
-        <Image
-          src={catfishImg}
-          alt="Picture of catfish"
-          className='object-cover'
-        />
-      </div>
       <LandingLayout>
         <Meta
           title="BCP Music | Schedule"

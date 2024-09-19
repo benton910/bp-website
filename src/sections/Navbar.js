@@ -12,9 +12,9 @@ const Navbar = () => {
   const toggleMenu = () => setMenuVisibility(!showMenu);
 
   return (
-    <div className="w-full py-10">
+    <div className="w-full pt-5 md:py-10">
       <div className="relative flex flex-col items-center px-10 mx-auto space-y-5 md:w-100">
-        <div className="h-1/3 w-1/3">
+        <div className="h-1/2 w-1/2 md:h-1/3 md:w-1/3">
           <Link href="/" className="z-30 m-10">
             <Image
               src={logoNameImg}
@@ -35,7 +35,7 @@ const Navbar = () => {
             className={[
               'items-center justify-center md:flex-row md:flex md:relative md:bg-transparent md:shadow-none md:top-0 md:backdrop-blur-none md:space-x-3',
               showMenu
-                ? 'absolute z-50 flex flex-col py-5 space-x-0 rounded shadow-xl bg-black/60 md:py-0 left-8 right-8 top-24 space-y-3 md:space-y-0 px-5'
+                ? 'absolute z-50 flex flex-col py-5 space-x-0 rounded shadow-xl bg-black/80 md:py-0 left-8 right-8 top-24 space-y-3 md:space-y-0 px-5'
                 : 'hidden',
             ].join(' ')}
           >

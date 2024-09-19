@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Swipe from "react-easy-swipe";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
@@ -13,7 +13,14 @@ import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 export default function Carousel({ images }) {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const [isReady, setIsReady] = useState(false);
+
+  const onLoadCallback = () => {
+    setIsReady(true);
+  };
+
   const handleNextSlide = () => {
+    setIsReady(false);
     let newSlide = currentSlide === images.length - 1 ? 0 : currentSlide + 1;
     setCurrentSlide(newSlide);
   };
@@ -23,13 +30,25 @@ export default function Carousel({ images }) {
     setCurrentSlide(newSlide);
   };
 
+  // useEffect hook to handle automatic slide transition
+  useEffect(() => {
+    // Start interval for automatic slide change if not hovered
+    const interval = setInterval(() => {
+      handleNextSlide();
+    }, 5000);
+
+    // Cleanup the interval on component unmount
+    return () => {
+      clearInterval(interval);
+    };
+  });
+
   return (
-    <div className="relative bg-black/0 w-5/6 self-center">
-      <AiOutlineLeft
-        onClick={handlePrevSlide}
-        className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
-      <div className="w-2/5 h-full flex overflow-hidden relative m-auto mt-5 mb-5">
+    <div className="relative bg-black/0 w-full self-center">
+      <div className="w-4/5 h-full md:w-2/5 flex overflow-hidden relative m-auto mt-5 mb-5">
+        <AiOutlineLeft
+          className="invisible md:visible absolute h-full left-0 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400/50 z-20"
+        />
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -41,33 +60,18 @@ export default function Carousel({ images }) {
                 <Image
                   src={image.src}
                   alt={image.alt}
+                  className={`object-cover bg-gray-400 transition duration-1000 ${isReady ? 'scale-100 bg-gray-400 blur-0' : 'scale-120 blur-xl'
+                    }`}
+                  onLoadingComplete={onLoadCallback}
                 />
               );
             }
           })}
         </Swipe>
-      </div>
-      <AiOutlineRight
-        onClick={handleNextSlide}
-        className="absolute right-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
-      />
-
-      <div className="relative flex justify-center p-2">
-        {images.map((_, index) => {
-          return (
-            <div
-              className={
-                index === currentSlide
-                  ? "h-4 w-4 bg-gray-700 rounded-full mx-2 mb-2 cursor-pointer"
-                  : "h-4 w-4 bg-gray-300 rounded-full mx-2 mb-2 cursor-pointer"
-              }
-              key={index}
-              onClick={() => {
-                setCurrentSlide(index);
-              }}
-            />
-          );
-        })}
+        <AiOutlineRight
+          onClick={handleNextSlide}
+          className="invisible md:visible absolute right-0 md:right-5 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
+        />
       </div>
     </div>
   );
