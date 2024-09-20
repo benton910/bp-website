@@ -1,12 +1,8 @@
 import Meta from '@/components/Meta/index';
 import { LandingLayout } from '@/layouts/index';
 import {
-  Features,
   ScheduleContent
 } from '@/sections/index';
-import Image from 'next/image';
-import catfishImg from '../../public/images/PROMOcopy/HANKFISH/cutoutfish1_HIGHRES.png';
-import { getAllShows } from '@/prisma/services/show';
 import prisma from '@/prisma/index';
 
 
