@@ -17,6 +17,14 @@ const images = [
   { src: highResPoster, alt: "High Res Poster" }
 ]
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Benton Parker',
+  image: soloShot1,
+  description: 'Americana Soul from Memphis, TN',
+}
+
 const Home = () => {
   return (
     <>
@@ -24,6 +32,10 @@ const Home = () => {
         <Meta
           title="BCP Music"
           description="Benton Parker's Music Page"
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <Carousel images={images} />
         <Hero />
