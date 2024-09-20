@@ -7,47 +7,42 @@ import cashappIcon from '../../public/images/PROMOcopy/SOCIAL/IMG_4102_LE_auto_x
 
 const Footer = () => {
   return (
-    <div className="w-full">
-      <div className="relative flex flex-col md:mx-auto md:w-5/6">
-        <footer className="flex flex-col items-center justify-center py-5 space-x-0 space-y-3 border-b md:flex-row md:space-y-0 md:space-x-3">
-          <a href="https://www.instagram.com/bentonparkermusic" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-300">
+    <div className="w-full pt-5 md:pt-24">
+      <div className="relative flex flex-col items-center md:mx-auto md:w-5/6">
+        <footer className="flex flex-row items-center justify-between py-5 space-x-0 border-b md:space-y-0 md:space-x-3">
+          <a href="https://www.instagram.com/bentonparkermusic" target="_blank" className="px-4 md:px-14 py-2 rounded hover:scale-125 duration-300">
             <Image
               src={instaIcon}
               alt="Instagram icon"
-              width={50}
-              height={50}
+              className='w-11 md:w-14'
             />
           </a>
-          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-300">
+          <a href="https://www.facebook.com/benton.parker.92/" target="_blank" className="px-4 md:px-14 py-2 rounded hover:scale-125 duration-300">
             <Image
               src={fbIcon}
               alt="Facebook icon"
-              width={50}
-              height={50}
+              className='w-11 md:w-14'
             />
           </a>
-          <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-300">
+          <a href="https://www.youtube.com/@bentonparkermusic/videos" target="_blank" className="px-4 md:px-14 py-2 rounded hover:scale-125 duration-300">
             <Image
               src={youtubeIcon}
               alt="Youtube icon"
-              width={60}
-              height={60}
+              className='w-11 md:w-16'
             />
           </a>
-          <a href="/" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-300">
+          <a href="/" target="_blank" className="px-4 md:px-14 py-2 rounded hover:scale-125 duration-300">
             <Image
               src={venmoIcon}
               alt="Venmo icon"
-              width={50}
-              height={50}
+              className='w-11 md:w-14'
             />
           </a>
-          <a href="/" target="_blank" className="px-5 py-2 rounded hover:scale-125 duration-300">
+          <a href="/" target="_blank" className="px-4 md:px-14 py-2 rounded hover:scale-125 duration-300">
             <Image
               src={cashappIcon}
               alt="CashApp icon"
-              width={50}
-              height={50}
+              className='w-11 md:w-14'
             />
           </a>
         </footer>

@@ -19,7 +19,7 @@ const ScheduleContent = ({ allShows }) => {
 
 
   return (
-    <div className="w-full py-10">
+    <div className="w-full md:py-10">
       <div className="relative flex flex-col px-10 mx-auto space-y-5 md:w-full">
         <div className="flex flex-col items-center justify-center md:pt-10 mx-auto z-10">
           <h1 className="text-5xl md:text-6xl font-extrabold text-center">
