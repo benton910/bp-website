@@ -45,11 +45,11 @@ export default function Carousel({ images }) {
   });
 
   return (
-    <div className="relative bg-black/0 w-full self-center">
+    <div className="relative bg-black/0 w-full self-center md:pt-10">
       <div className="w-4/5 h-full md:w-2/5 flex overflow-hidden relative m-auto mt-5 mb-5">
         <AiOutlineLeft
           onClick={handlePrevSlide}
-          className="invisible md:visible absolute h-full left-0 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400/50 z-20"
+          className="invisible md:visible absolute h-full left-0 m-auto text-9xl inset-y-1/2 cursor-pointer text-gray-400/0 z-20"
         />
         <Swipe
           onSwipeLeft={handleNextSlide}
@@ -74,7 +74,7 @@ export default function Carousel({ images }) {
         </Swipe>
         <AiOutlineRight
           onClick={handleNextSlide}
-          className="invisible md:visible absolute h-full right-0 m-auto text-2xl inset-y-1/2 cursor-pointer text-gray-400/50 z-20"
+          className="invisible md:visible absolute h-full right-0 m-auto text-9xl inset-y-1/2 cursor-pointer text-gray-400/0 z-20"
         />
       </div>
     </div>
