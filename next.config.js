@@ -1,6 +1,6 @@
 module.exports = {
   images: {
-    domains: [''],
+    formats: ['image/webp'],
   },
   reactStrictMode: true,
 };
