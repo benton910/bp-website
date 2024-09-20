@@ -3,7 +3,7 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { useSession } from 'next-auth/react';
 import Link from 'next/link';
 import Image from 'next/image';
-import logoNameImg from '../../public/images/PROMOcopy/BPLogo.png';
+import logoNameImg from '../../public/images/PROMOcopy/BPLOGOCOMP.png';
 
 const Navbar = () => {
   const { status: sessionStatus } = useSession();

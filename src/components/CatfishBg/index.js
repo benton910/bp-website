@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import catfishImg from '../../../public/images/PROMOcopy/HANKFISH/cutoutfish1_HIGHRES.png';
+import catfishImg from '../../../public/images/PROMOcopy/HANKFISH/cutoutfish1_comp.png';
 
 const CatfishBg = ({ children, className, ...rest }) => {
   return (

@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { useSession } from 'next-auth/react';
 
 import Image from 'next/image';
-import soloShot1 from '../../public/images/PROMOcopy/HIGHRESSOLO.jpg';
-import soloShot2 from '../../public/images/PROMOcopy/HIGHRESSOLO2.jpg'
+import soloShot1 from '../../public/images/PROMOcopy/SOLOCOMP.jpg';
+import soloShot2 from '../../public/images/PROMOcopy/SOLOCOMP2.jpg'
 
 const AboutContent = () => {
   const { status: sessionStatus } = useSession();

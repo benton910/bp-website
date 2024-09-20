@@ -5,9 +5,9 @@ import {
   Hero
 } from '@/sections/index';
 
-import soloShot1 from '../../public/images/PROMOcopy/HIGHRESSOLO.jpg';
-import soloShot2 from '../../public/images/PROMOcopy/HIGHRESSOLO2.jpg'
-import highResPoster from '../../public/images/PROMOcopy/HANKFISH/Poster18x28_HIGHRES.jpg'
+import soloShot1 from '../../public/images/PROMOcopy/SOLOCOMP.jpg';
+import soloShot2 from '../../public/images/PROMOcopy/SOLOCOMP2.jpg'
+import highResPoster from '../../public/images/PROMOcopy/HANKFISH/Poster18x28.png'
 
 
 // Should be 3 images: 1 of me singing, 1 of me playing guitar, 1 of me playing bass
