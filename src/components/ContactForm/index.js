@@ -24,7 +24,7 @@ const ContactForm = () => {
           <input
             type='text'
             placeholder='Full Name'
-            required="true"
+            required={true}
             className='w-72 md:w-96 rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
             {...register('name', { required: true })}
           />
@@ -39,7 +39,7 @@ const ContactForm = () => {
           <input
             type='email'
             placeholder='example@domain.com'
-            required="true"
+            required={true}
             className='w-72 md:w-96 rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
             {...register('email', { required: true })}
           />
@@ -54,7 +54,7 @@ const ContactForm = () => {
           <textarea
             rows={4}
             placeholder='Type your message'
-            required="true"
+            required={true}
             className='w-72 h-60 md:w-96 md:h-80 resize-none rounded-md border border-gray-300 bg-white py-3 px-6 text-base font-medium text-gray-700 outline-none focus:border-purple-500 focus:shadow-md'
             {...register('message', { required: true })}
           ></textarea>
