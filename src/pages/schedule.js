@@ -6,14 +6,18 @@ import {
 import prisma from '@/prisma/index';
 
 
-//ORGANIZE ALL SHOWS BY DATE
 export async function getServerSideProps() {
   // Fetch data from external API
   const allShows = await prisma.show.findMany();
+  //Organize all shows by date/time descending
+  allShows.sort((a, b) => b.showDateStartTime - a.showDateStartTime);
   const showsProp = allShows.map((x) => JSON.stringify(x));
+
   // Pass data to the page via props
   return { props: { showsProp } }
 };
+
+
 
 const Schedule = ({ showsProp }) => {
   return (
