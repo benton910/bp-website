@@ -19,48 +19,50 @@ import { generateDisplayInfo } from "./display-info-generator";
 //   venueUrl = { show.venueUrl }
 
 export const generateEventStructuredData = (showProps, showDisplayInfo) => {
-  return {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": showDisplayInfo.title,
-    "startDate": showProps.startTime,
-    "endDate": showProps.endTime,
-    "eventStatus": "https://schema.org/EventScheduled",
-    "location": {
-      "@type": "Place",
-      "name": showProps.gigVenue,
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "100 West Snickerpark Dr",
-        "addressLocality": "Snickertown",
-        "postalCode": "19019",
-        "addressRegion": "PA",
-        "addressCountry": "US"
+  if (showProps && showDisplayInfo) {
+    return {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": showDisplayInfo.title,
+      "startDate": showProps.startTime,
+      "endDate": showProps.endTime,
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": {
+        "@type": "Place",
+        "name": showProps.gigVenue,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "100 West Snickerpark Dr",
+          "addressLocality": "Snickertown",
+          "postalCode": "19019",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "url": showProps.venueUrl
       },
-      "url": showProps.venueUrl
-    },
-    // "image": [
-    //   "https://example.com/photos/1x1/photo.jpg",
-    //   "https://example.com/photos/4x3/photo.jpg",
-    //   "https://example.com/photos/16x9/photo.jpg"
-    // ],
-    // "offers": {
-    //   "@type": "Offer",
-    //   "url": "https://www.example.com/event_offer/12345_202403180430",
-    //   "price": 30,
-    //   "priceCurrency": "USD",
-    //   "availability": "https://schema.org/InStock",
-    //   "validFrom": "2024-05-21T12:00"
-    // },
-    // "performer": {
-    //   "@type": "PerformingGroup",
-    //   "name": "Kira and Morrison"
-    // },
-    // "organizer": {
-    //   "@type": "Organization",
-    //   "name": "Kira and Morrison Music",
-    //   "url": "https://kiraandmorrisonmusic.com"
-    // }
+      // "image": [
+      //   "https://example.com/photos/1x1/photo.jpg",
+      //   "https://example.com/photos/4x3/photo.jpg",
+      //   "https://example.com/photos/16x9/photo.jpg"
+      // ],
+      // "offers": {
+      //   "@type": "Offer",
+      //   "url": "https://www.example.com/event_offer/12345_202403180430",
+      //   "price": 30,
+      //   "priceCurrency": "USD",
+      //   "availability": "https://schema.org/InStock",
+      //   "validFrom": "2024-05-21T12:00"
+      // },
+      // "performer": {
+      //   "@type": "PerformingGroup",
+      //   "name": "Kira and Morrison"
+      // },
+      // "organizer": {
+      //   "@type": "Organization",
+      //   "name": "Kira and Morrison Music",
+      //   "url": "https://kiraandmorrisonmusic.com"
+      // }
+    }
   }
 };
 

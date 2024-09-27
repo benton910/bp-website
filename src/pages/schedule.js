@@ -9,8 +9,8 @@ import prisma from '@/prisma/index';
 export async function getServerSideProps() {
   // Fetch data from external API
   const allShows = await prisma.show.findMany();
-  //Organize all shows by date/time descending
-  allShows.sort((a, b) => b.showDateStartTime - a.showDateStartTime);
+  //Organize all shows by date/time ascending
+  allShows.sort((a, b) => a.showDateStartTime - b.showDateStartTime);
   const showsProp = allShows.map((x) => JSON.stringify(x));
 
   // Pass data to the page via props

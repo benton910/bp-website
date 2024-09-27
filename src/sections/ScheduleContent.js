@@ -1,21 +1,11 @@
-import { useState } from 'react';
-import { useSession } from 'next-auth/react';
 import ScheduleCard from '@/components/ScheduleCard';
 
-//Retrieve ALL schedule entries from the DB, return in an Array
+//Passed in ALL schedule entries from the DB via Props
 //For each entry in the array, display a ScheduleCard component
 
-// Define a helper function to order the allShows[] array by the starting date/time of the gig
-
-
 const ScheduleContent = ({ allShows }) => {
-  const { status: sessionStatus } = useSession();
-  const [showMenu, setMenuVisibility] = useState(false);
-
-  const toggleMenu = () => setMenuVisibility(!showMenu);
 
   const jsonShows = allShows.map((x) => JSON.parse(x));
-
 
 
   return (
@@ -26,8 +16,8 @@ const ScheduleContent = ({ allShows }) => {
             <span className="block uppercase tracking-widest font-bold text-blue-600">UPCOMING SHOWS</span>
           </h1>
         </div>
-        {jsonShows.map((show) => {
-          return (<div className="flex items-center justify-center w-full z-10">
+        {jsonShows.map((show, i) => {
+          return (<div className="flex items-center justify-center w-full z-10" key={i}>
             <ScheduleCard
               id={show.id}
               createdAt={show.createdAt}
@@ -38,6 +28,7 @@ const ScheduleContent = ({ allShows }) => {
               personnel={show.personnel}
               bpRole={show.bpRole}
               venueUrl={show.venueUrl}
+              key={i}
             />
           </div>)
         })}
