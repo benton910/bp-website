@@ -16,10 +16,14 @@ export const generateDisplayInfo = (scProps) => {
             title: 'BP & The Royal Reds @ ' + scProps.gigVenue,
             description: 'ft. ' + scProps.personnel
         }
-    }
-    else if (scProps.bpRole === 'SIDEMAN') {
+    } else if (scProps.bpRole === 'SIDEMAN') {
         return {
             title: 'w/ ' + scProps.personnel + ' @ ' + scProps.gigVenue,
+            description: null
+        }
+    } else if (scProps.bpRole === 'OTHER') {
+        return {
+            title: '@ ' + scProps.gigVenue,
             description: null
         }
     }

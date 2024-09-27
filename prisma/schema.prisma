@@ -14,10 +14,11 @@ model Show {
   createdAt          DateTime? @default(now())
   showDateStartTime  DateTime
   showDateEndTime    DateTime
+  showDateTimeZone   TimeZone  @default(UTC)
   gigVenue           String
   cityState          String
   personnel          String?
-  bpRole             String?
+  bpRole             MusicRole @default(OTHER)
   venueUrl           String?
 
   @@map("shows")
@@ -175,4 +176,28 @@ enum SubscriptionType {
 enum TeamRole {
   MEMBER
   OWNER
+}
+
+enum MusicRole {
+  SOLO
+  DUO
+  FRONTMAN
+  SIDEMAN
+  OTHER
+}
+
+enum TimeZone {
+  AST
+  CST
+  CDT
+  EST
+  EDT
+  MST
+  MDT
+  PST
+  PDT
+  HST
+  AKST
+  AKDT
+  UTC
 }

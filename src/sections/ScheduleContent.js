@@ -23,6 +23,7 @@ const ScheduleContent = ({ allShows }) => {
               createdAt={show.createdAt}
               startTime={show.showDateStartTime}
               endTime={show.showDateEndTime}
+              timeZone={show.showDateTimeZone}
               gigVenue={show.gigVenue}
               cityState={show.cityState}
               personnel={show.personnel}
