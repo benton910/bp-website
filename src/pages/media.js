@@ -14,7 +14,6 @@ const Media = () => {
           description="Hear Benton Parker!"
         />
         <MediaContent />
-        <Features />
       </LandingLayout>
     </>
   );

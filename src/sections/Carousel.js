@@ -62,6 +62,7 @@ export default function Carousel({ images }) {
                 <Image
                   src={image.src}
                   alt={image.alt}
+                  key="img"
                   className={`
                     object-cover bg-gray-400 transition duration-700
                     ${isReady ? 'scale-100 bg-gray-400 blur-0' : 'scale-120 blur-xl'}

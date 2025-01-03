@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useSession } from 'next-auth/react';
+import Link from 'next/link';
 
 const Hero = () => {
   const { status: sessionStatus } = useSession();
@@ -20,9 +21,9 @@ const Hero = () => {
           </p>
         </div>
         <div className="flex items-center justify-center pt-5 space-x-5 z-10">
-          <a href="/media" className="px-10 py-3 text-center text-white bg-blue-600 rounded shadow hover:outline">
+          <Link href="/media" className="px-10 py-3 text-center text-white bg-blue-600 rounded shadow hover:outline">
             Watch Now!
-          </a>
+          </Link>
         </div>
       </div>
     </div>

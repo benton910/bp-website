@@ -40,11 +40,11 @@ const Navbar = () => {
             ].join(' ')}
           >
             <nav className="flex flex-col w-full space-x-0 space-y-3 text-center text-2xl justify-between md:space-y-0 md:space-x-10 md:flex-row">
-              <a href="/about" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">About</a>
-              <a href="/schedule" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Schedule</a>
-              <a href="/media" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Media</a>
-              <a href="/store" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Store</a>
-              <a href="/contact" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Contact</a>
+              <Link href="/about" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">About</Link>
+              <Link href="/schedule" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Schedule</Link>
+              <Link href="/media" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Media</Link>
+              <Link href="/store" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Store</Link>
+              <Link href="/contact" className="px-7 py-2 rounded hover:text-blue-600/80 duration-200">Contact</Link>
             </nav>
             {/* <Link
                   href={
